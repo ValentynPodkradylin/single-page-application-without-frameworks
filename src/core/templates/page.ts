@@ -1,15 +1,17 @@
+import { IdPage } from "../../pages/models";
+
 abstract class Page {
   protected container: HTMLElement;
   static TextObject = {};
 
-  constructor(id: string) {
-    this.container = document.createElement('div');
+  constructor(id: IdPage) {
+    this.container = document.createElement("div");
     this.container.id = id;
   }
 
   protected createHeaderTitle(text: string) {
-    const headerTitle = document.createElement('h1');
-    headerTitle.innerText = text;
+    const headerTitle = document.createElement("h1");
+    headerTitle.innerHTML = text;
     return headerTitle;
   }
 

@@ -1,17 +1,18 @@
-import Page from '../../core/templates/page';
+import Page from "../../core/templates/page";
+import { IdPage } from "../models";
 
 class StatisticsPage extends Page {
   static TextObject = {
-    MainTitle: 'StatisticsPage',
+    MainTitle: "Statistics Page",
   };
-
-  constructor(id: string) {
+  constructor(id: IdPage) {
     super(id);
   }
 
-  render() {
+  render(): HTMLElement {
     const title = this.createHeaderTitle(StatisticsPage.TextObject.MainTitle);
     this.container.append(title);
+
     return this.container;
   }
 }
