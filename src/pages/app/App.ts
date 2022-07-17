@@ -3,7 +3,7 @@ import MainPage from "../main";
 import { IdPage } from "../models";
 import SettingsPage from "../settings";
 import StatisticsPage from "../statistics";
-import CorrectPage from "./CorrectPage";
+import CorrectPage from "../../core/templates/CorrectPage";
 
 class App {
   private container: HTMLElement;

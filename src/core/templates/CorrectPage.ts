@@ -1,8 +1,8 @@
-import Page from "../../core/templates/page";
-import MainPage from "../main";
-import { IdPage } from "../models";
-import SettingsPage from "../settings";
-import StatisticsPage from "../statistics";
+import Page from "./page
+import MainPage from "../../pages/mainages/main";
+import { IdPage } from "../../pages/modelses/models";
+import SettingsPage from "../../pages/settings/settings";
+import StatisticsPage from "../../pages/statisticstatistics";
 
 class CorrectPage {
   private pageId: IdPage;
